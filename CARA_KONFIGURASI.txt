@@ -1,0 +1,37 @@
+🔧 Cara Konfigurasi
+
+1. Ubah Produk Sesuai Kebutuhan
+    Buka file index.html, lalu ubah nama, foto, dan harga produk sesuai dengan produk yang ingin kamu jual melalui sistem preorder.
+
+2. Buat Spreadsheet Baru di Google Sheets
+    Buka browser dan masuk ke Google Sheets
+    , lalu buat Spreadsheet baru. Spreadsheet ini akan digunakan untuk menyimpan data pemesanan secara otomatis.
+
+3. Buka Apps Script di Spreadsheet
+    Setelah spreadsheet terbuka, klik menu "Ekstensi" → "Apps Script".
+
+4. Salin Kode dari File JavaScript
+    Buka file Isi_Kode_Apps_Script.js yang ada di proyek ini, lalu salin semua kode di dalamnya.
+
+5. Tempelkan Kode di Apps Script
+    Kembali ke halaman Apps Script, hapus isi default-nya, lalu tempelkan kode yang sudah kamu salin.
+
+6. Simpan Kode
+    Simpan kode dengan menekan Ctrl + S (atau klik ikon disket).
+
+7. Deploy Sebagai Aplikasi Web
+    Klik tombol "Terapkan", lalu pilih "Deployment baru". Pada jenis deployment, pilih "Aplikasi Web".
+
+8. Atur Izin Akses dan Deskripsi
+    Isi kolom deskripsi (bebas), atur:
+    - Jalankan sebagai: Saya
+    - Siapa yang memiliki akses: Siapa saja
+    - Terapkan dan Salin URL Aplikasi Web
+    Klik "Terapkan", lalu salin URL Aplikasi Web yang muncul. URL ini akan digunakan untuk menghubungkan form dengan spreadsheet.
+
+9. Masukkan URL ke Dalam script.js
+    Buka file script.js, lalu cari baris berikut:
+        const sheetAppUrl = 'ISI_URL_APLIKASI_WEB_ANDA';
+    Ganti 'ISI_URL_APLIKASI_WEB_ANDA' dengan URL aplikasi web yang sudah kamu salin tadi.
+
+Note : Jika Ingin Memasukan Gambar, Pilih gambar yang ingin di masukan, lalu copy/cut gambar dan tempelkan/pindahkan gambar ke folder "Gambar_Produk"
